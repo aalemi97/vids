@@ -137,8 +137,7 @@
 		BB4B2C492C1FAD2400B6D51C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				BB4B2C4A2C1FAD4600B6D51C /* APIError.swift */,
-				BB4B2C4C2C1FAD5900B6D51C /* APIURL.swift */,
+				BB4B2C5B2C1FB15D00B6D51C /* API */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -149,6 +148,15 @@
 				BB4B2C542C1FADAE00B6D51C /* APIURLUnitTests.swift */,
 			);
 			path = VidsUnitTests;
+			sourceTree = "<group>";
+		};
+		BB4B2C5B2C1FB15D00B6D51C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BB4B2C4A2C1FAD4600B6D51C /* APIError.swift */,
+				BB4B2C4C2C1FAD5900B6D51C /* APIURL.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
