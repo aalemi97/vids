@@ -11,6 +11,7 @@
 		BB4B2C372C1FA10A00B6D51C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C362C1FA10A00B6D51C /* ContentView.swift */; };
 		BB4B2C392C1FA10C00B6D51C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4B2C382C1FA10C00B6D51C /* Assets.xcassets */; };
 		BB4B2C3C2C1FA10C00B6D51C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4B2C3B2C1FA10C00B6D51C /* Preview Assets.xcassets */; };
+		BB4B2C442C1FA40900B6D51C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4B2C432C1FA40900B6D51C /* Launch Screen.storyboard */; };
 		E586282FF61F72BA6C2342C6 /* libPods-Vids.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6706585E4BDBBC190B3F1CC /* libPods-Vids.a */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 		BB4B2C362C1FA10A00B6D51C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB4B2C382C1FA10C00B6D51C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB4B2C3B2C1FA10C00B6D51C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB4B2C432C1FA40900B6D51C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E6F9F47B9603ADF825E25510 /* Pods-Vids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vids.debug.xcconfig"; path = "Target Support Files/Pods-Vids/Pods-Vids.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 		BB4B2C332C1FA10A00B6D51C /* Vids */ = {
 			isa = PBXGroup;
 			children = (
+				BB4B2C422C1FA3F600B6D51C /* SupportingFiles */,
 				BB4B2C342C1FA10A00B6D51C /* VidsApp.swift */,
 				BB4B2C362C1FA10A00B6D51C /* ContentView.swift */,
 				BB4B2C382C1FA10C00B6D51C /* Assets.xcassets */,
@@ -89,6 +92,14 @@
 				BB4B2C3B2C1FA10C00B6D51C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB4B2C422C1FA3F600B6D51C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BB4B2C432C1FA40900B6D51C /* Launch Screen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB4B2C442C1FA40900B6D51C /* Launch Screen.storyboard in Resources */,
 				BB4B2C3C2C1FA10C00B6D51C /* Preview Assets.xcassets in Resources */,
 				BB4B2C392C1FA10C00B6D51C /* Assets.xcassets in Resources */,
 			);
@@ -350,6 +362,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -387,6 +400,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
