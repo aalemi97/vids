@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import Alamofire
 
-enum APIURL: String {
+enum APIURL: String, CaseIterable {
     
     case videos = "videos"
     

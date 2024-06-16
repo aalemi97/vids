@@ -15,8 +15,19 @@
 		BB4B2C462C1FA4D000B6D51C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4B2C452C1FA4D000B6D51C /* Colors.xcassets */; };
 		BB4B2C4B2C1FAD4600B6D51C /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C4A2C1FAD4600B6D51C /* APIError.swift */; };
 		BB4B2C4D2C1FAD5900B6D51C /* APIURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C4C2C1FAD5900B6D51C /* APIURL.swift */; };
+		BB4B2C552C1FADAE00B6D51C /* APIURLUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C542C1FADAE00B6D51C /* APIURLUnitTests.swift */; };
 		E586282FF61F72BA6C2342C6 /* libPods-Vids.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6706585E4BDBBC190B3F1CC /* libPods-Vids.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB4B2C562C1FADAE00B6D51C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB4B2C292C1FA10A00B6D51C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB4B2C302C1FA10A00B6D51C;
+			remoteInfo = Vids;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6CCD5626FC3B0760957A31B6 /* Pods-Vids.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vids.release.xcconfig"; path = "Target Support Files/Pods-Vids/Pods-Vids.release.xcconfig"; sourceTree = "<group>"; };
@@ -31,6 +42,8 @@
 		BB4B2C482C1FABE400B6D51C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Vids/SupportingFiles/Info.plist; sourceTree = SOURCE_ROOT; };
 		BB4B2C4A2C1FAD4600B6D51C /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		BB4B2C4C2C1FAD5900B6D51C /* APIURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURL.swift; sourceTree = "<group>"; };
+		BB4B2C522C1FADAE00B6D51C /* VidsUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VidsUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB4B2C542C1FADAE00B6D51C /* APIURLUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURLUnitTests.swift; sourceTree = "<group>"; };
 		E6F9F47B9603ADF825E25510 /* Pods-Vids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vids.debug.xcconfig"; path = "Target Support Files/Pods-Vids/Pods-Vids.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,6 +53,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E586282FF61F72BA6C2342C6 /* libPods-Vids.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4B2C4F2C1FADAE00B6D51C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				BB4B2C332C1FA10A00B6D51C /* Vids */,
+				BB4B2C532C1FADAE00B6D51C /* VidsUnitTests */,
 				BB4B2C322C1FA10A00B6D51C /* Products */,
 				1C1A2C77330FBC704C0F6B68 /* Pods */,
 				13D91EFF2402ADC37D27B1FC /* Frameworks */,
@@ -77,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				BB4B2C312C1FA10A00B6D51C /* Vids.app */,
+				BB4B2C522C1FADAE00B6D51C /* VidsUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +143,14 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		BB4B2C532C1FADAE00B6D51C /* VidsUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB4B2C542C1FADAE00B6D51C /* APIURLUnitTests.swift */,
+			);
+			path = VidsUnitTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +173,24 @@
 			productReference = BB4B2C312C1FA10A00B6D51C /* Vids.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BB4B2C512C1FADAE00B6D51C /* VidsUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB4B2C582C1FADAE00B6D51C /* Build configuration list for PBXNativeTarget "VidsUnitTests" */;
+			buildPhases = (
+				BB4B2C4E2C1FADAE00B6D51C /* Sources */,
+				BB4B2C4F2C1FADAE00B6D51C /* Frameworks */,
+				BB4B2C502C1FADAE00B6D51C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB4B2C572C1FADAE00B6D51C /* PBXTargetDependency */,
+			);
+			name = VidsUnitTests;
+			productName = VidsUnitTests;
+			productReference = BB4B2C522C1FADAE00B6D51C /* VidsUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,6 +203,10 @@
 				TargetAttributes = {
 					BB4B2C302C1FA10A00B6D51C = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					BB4B2C512C1FADAE00B6D51C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = BB4B2C302C1FA10A00B6D51C;
 					};
 				};
 			};
@@ -172,6 +224,7 @@
 			projectRoot = "";
 			targets = (
 				BB4B2C302C1FA10A00B6D51C /* Vids */,
+				BB4B2C512C1FADAE00B6D51C /* VidsUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +238,13 @@
 				BB4B2C462C1FA4D000B6D51C /* Colors.xcassets in Resources */,
 				BB4B2C3C2C1FA10C00B6D51C /* Preview Assets.xcassets in Resources */,
 				BB4B2C392C1FA10C00B6D51C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB4B2C502C1FADAE00B6D51C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +304,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB4B2C4E2C1FADAE00B6D51C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB4B2C552C1FADAE00B6D51C /* APIURLUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB4B2C572C1FADAE00B6D51C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB4B2C302C1FA10A00B6D51C /* Vids */;
+			targetProxy = BB4B2C562C1FADAE00B6D51C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BB4B2C3D2C1FA10C00B6D51C /* Debug */ = {
@@ -446,6 +522,44 @@
 			};
 			name = Release;
 		};
+		BB4B2C592C1FADAE00B6D51C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 245P62CBK8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aalemi.VidsUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vids.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vids";
+			};
+			name = Debug;
+		};
+		BB4B2C5A2C1FADAE00B6D51C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 245P62CBK8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aalemi.VidsUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vids.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vids";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -463,6 +577,15 @@
 			buildConfigurations = (
 				BB4B2C402C1FA10C00B6D51C /* Debug */,
 				BB4B2C412C1FA10C00B6D51C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB4B2C582C1FADAE00B6D51C /* Build configuration list for PBXNativeTarget "VidsUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB4B2C592C1FADAE00B6D51C /* Debug */,
+				BB4B2C5A2C1FADAE00B6D51C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
