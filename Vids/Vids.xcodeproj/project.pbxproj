@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		09A2E2E220FE07609609027B /* libPods-VidsUnitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7245E12AEBB67D4659D3B72A /* libPods-VidsUnitTests.a */; };
 		BB4B2C352C1FA10A00B6D51C /* VidsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C342C1FA10A00B6D51C /* VidsApp.swift */; };
-		BB4B2C372C1FA10A00B6D51C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C362C1FA10A00B6D51C /* ContentView.swift */; };
 		BB4B2C392C1FA10C00B6D51C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4B2C382C1FA10C00B6D51C /* Assets.xcassets */; };
 		BB4B2C3C2C1FA10C00B6D51C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4B2C3B2C1FA10C00B6D51C /* Preview Assets.xcassets */; };
 		BB4B2C442C1FA40900B6D51C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4B2C432C1FA40900B6D51C /* Launch Screen.storyboard */; };
@@ -23,6 +22,7 @@
 		BB4B2C682C1FB5A500B6D51C /* VideoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C672C1FB5A500B6D51C /* VideoEntity.swift */; };
 		BB4B2C6A2C1FB5BD00B6D51C /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C692C1FB5BD00B6D51C /* Author.swift */; };
 		BB4B2C6E2C1FB63300B6D51C /* FeedsListViewModelUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C6D2C1FB63300B6D51C /* FeedsListViewModelUnitTest.swift */; };
+		BB4B2C702C1FBB2A00B6D51C /* FeedsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C6F2C1FBB2A00B6D51C /* FeedsListView.swift */; };
 		E586282FF61F72BA6C2342C6 /* libPods-Vids.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6706585E4BDBBC190B3F1CC /* libPods-Vids.a */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +44,6 @@
 		A6706585E4BDBBC190B3F1CC /* libPods-Vids.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Vids.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4B2C312C1FA10A00B6D51C /* Vids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4B2C342C1FA10A00B6D51C /* VidsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VidsApp.swift; sourceTree = "<group>"; };
-		BB4B2C362C1FA10A00B6D51C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB4B2C382C1FA10C00B6D51C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB4B2C3B2C1FA10C00B6D51C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB4B2C432C1FA40900B6D51C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -60,6 +59,7 @@
 		BB4B2C672C1FB5A500B6D51C /* VideoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEntity.swift; sourceTree = "<group>"; };
 		BB4B2C692C1FB5BD00B6D51C /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		BB4B2C6D2C1FB63300B6D51C /* FeedsListViewModelUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsListViewModelUnitTest.swift; sourceTree = "<group>"; };
+		BB4B2C6F2C1FBB2A00B6D51C /* FeedsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsListView.swift; sourceTree = "<group>"; };
 		E6F9F47B9603ADF825E25510 /* Pods-Vids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vids.debug.xcconfig"; path = "Target Support Files/Pods-Vids/Pods-Vids.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,8 +129,6 @@
 				BB4B2C632C1FB55A00B6D51C /* Feeds */,
 				BB4B2C492C1FAD2400B6D51C /* Shared */,
 				BB4B2C422C1FA3F600B6D51C /* SupportingFiles */,
-				BB4B2C342C1FA10A00B6D51C /* VidsApp.swift */,
-				BB4B2C362C1FA10A00B6D51C /* ContentView.swift */,
 				BB4B2C3A2C1FA10C00B6D51C /* Preview Content */,
 			);
 			path = Vids;
@@ -148,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				BB4B2C482C1FABE400B6D51C /* Info.plist */,
+				BB4B2C342C1FA10A00B6D51C /* VidsApp.swift */,
 				BB4B2C432C1FA40900B6D51C /* Launch Screen.storyboard */,
 				BB4B2C382C1FA10C00B6D51C /* Assets.xcassets */,
 				BB4B2C452C1FA4D000B6D51C /* Colors.xcassets */,
@@ -196,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				BB4B2C642C1FB57000B6D51C /* FeedsListViewModel.swift */,
+				BB4B2C6F2C1FBB2A00B6D51C /* FeedsListView.swift */,
 			);
 			path = Feeds;
 			sourceTree = "<group>";
@@ -380,11 +380,11 @@
 			files = (
 				BB4B2C682C1FB5A500B6D51C /* VideoEntity.swift in Sources */,
 				BB4B2C602C1FB1CE00B6D51C /* Interactor.swift in Sources */,
+				BB4B2C702C1FBB2A00B6D51C /* FeedsListView.swift in Sources */,
 				BB4B2C5E2C1FB1AC00B6D51C /* NetworkInteractorProvider.swift in Sources */,
 				BB4B2C6A2C1FB5BD00B6D51C /* Author.swift in Sources */,
 				BB4B2C4D2C1FAD5900B6D51C /* APIURL.swift in Sources */,
 				BB4B2C652C1FB57000B6D51C /* FeedsListViewModel.swift in Sources */,
-				BB4B2C372C1FA10A00B6D51C /* ContentView.swift in Sources */,
 				BB4B2C352C1FA10A00B6D51C /* VidsApp.swift in Sources */,
 				BB4B2C4B2C1FAD4600B6D51C /* APIError.swift in Sources */,
 			);
