@@ -3,4 +3,8 @@ platform :ios, '14.0'
 target 'Vids' do
   pod 'MarkdownKit', '~> 1.7.1'
   pod 'Alamofire', '~> 5.9.1'
+  
+  target 'VidsUnitTests' do
+    inherit! :search_paths
+  end
 end
