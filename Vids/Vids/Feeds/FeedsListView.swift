@@ -20,8 +20,8 @@ struct FeedsListView: View {
                 }
             }
         } else {
-            List(viewModel.videos, id: \.id) {video in
-                NavigationLink(destination: VideoDetailView(video: video)) {
+            List(viewModel.videos, id: \.id) { video in
+                NavigationLink(destination: VideoDetailView(viewModel: viewModel.generateVideoDetailViewModel(video: video))) {
                     VideoItemView(video: video)
                 }
             }.onAppear(perform: {

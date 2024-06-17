@@ -27,4 +27,11 @@ class FeedsListViewModel: ObservableObject {
             })
         }.store(in: &cancellable)
     }
+    func generateVideoDetailViewModel(video: VideoEntity) -> VideoDetailViewModel {
+        let index = videos.firstIndex { item in
+            item.id == video.id
+        }
+        let viewModel = VideoDetailViewModel(videos: videos, currentIndex: index ?? 0, currentVideo: video)
+        return viewModel
+    }
 }

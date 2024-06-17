@@ -24,6 +24,7 @@
 		BB4B2C6E2C1FB63300B6D51C /* FeedsListViewModelUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C6D2C1FB63300B6D51C /* FeedsListViewModelUnitTest.swift */; };
 		BB4B2C702C1FBB2A00B6D51C /* FeedsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C6F2C1FBB2A00B6D51C /* FeedsListView.swift */; };
 		BB4B2C742C1FBF4900B6D51C /* VideoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C732C1FBF4900B6D51C /* VideoDetailView.swift */; };
+		BB4B2C762C1FE41F00B6D51C /* VideoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4B2C752C1FE41F00B6D51C /* VideoDetailViewModel.swift */; };
 		E586282FF61F72BA6C2342C6 /* libPods-Vids.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6706585E4BDBBC190B3F1CC /* libPods-Vids.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		BB4B2C6D2C1FB63300B6D51C /* FeedsListViewModelUnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsListViewModelUnitTest.swift; sourceTree = "<group>"; };
 		BB4B2C6F2C1FBB2A00B6D51C /* FeedsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsListView.swift; sourceTree = "<group>"; };
 		BB4B2C732C1FBF4900B6D51C /* VideoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailView.swift; sourceTree = "<group>"; };
+		BB4B2C752C1FE41F00B6D51C /* VideoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailViewModel.swift; sourceTree = "<group>"; };
 		E6F9F47B9603ADF825E25510 /* Pods-Vids.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vids.debug.xcconfig"; path = "Target Support Files/Pods-Vids/Pods-Vids.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				BB4B2C732C1FBF4900B6D51C /* VideoDetailView.swift */,
+				BB4B2C752C1FE41F00B6D51C /* VideoDetailViewModel.swift */,
 			);
 			path = VideoDetail;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				BB4B2C4D2C1FAD5900B6D51C /* APIURL.swift in Sources */,
 				BB4B2C652C1FB57000B6D51C /* FeedsListViewModel.swift in Sources */,
 				BB4B2C352C1FA10A00B6D51C /* VidsApp.swift in Sources */,
+				BB4B2C762C1FE41F00B6D51C /* VideoDetailViewModel.swift in Sources */,
 				BB4B2C4B2C1FAD4600B6D51C /* APIError.swift in Sources */,
 				BB4B2C742C1FBF4900B6D51C /* VideoDetailView.swift in Sources */,
 			);
