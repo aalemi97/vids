@@ -9,7 +9,7 @@ import SwiftUI
 import AVKit
 
 struct FeedsListView: View {
-    @ObservedObject var viewModel: FeedsListViewModel = FeedsListViewModel()
+    @ObservedObject private var viewModel: FeedsListViewModel = FeedsListViewModel()
     var body: some View {
         if let error = viewModel.error {
             VStack(spacing: 8) {
@@ -21,9 +21,13 @@ struct FeedsListView: View {
             }
         } else {
             List(viewModel.videos, id: \.id) {video in
-                VideoItemView(video: video)
+                NavigationLink(destination: VideoDetailView(video: video)) {
+                    VideoItemView(video: video)
+                }
             }.onAppear(perform: {
-                viewModel.getVideos()
+                if (viewModel.videos.isEmpty) {
+                    viewModel.getVideos()
+                }
             })
         }
     }
@@ -42,8 +46,6 @@ struct VideoItemView: View {
                 TextView(content: video.author.name, contentFontWeight: .semibold)
                 TextView(content: video.convertDateToString(), contentFontWeight: .regular)
             }
-            Spacer()
-            Image(systemName: "info.circle").foregroundColor(Color("vidsPurple", bundle: Bundle.main))
         }
     }
 }
@@ -52,7 +54,6 @@ struct TextView: View {
     let content: String
     let contentFontWeight: Font.Weight
     var body: some View {
-        
         Text("\(content)").fontWeight(contentFontWeight).foregroundColor(Color("vidsBlack", bundle: Bundle.main))
     }
 }
